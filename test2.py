@@ -3,3 +3,5 @@ while True:
     break
 
 print("Foo")
+print("Foo")
+print("Foo")
