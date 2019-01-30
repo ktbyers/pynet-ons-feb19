@@ -7,3 +7,5 @@ for x in range(10):
     print(y)
 
 print("Foo")
+print("Foo")
+print("Foo")
