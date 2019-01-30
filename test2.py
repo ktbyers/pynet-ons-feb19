@@ -3,7 +3,9 @@ while True:
     break
 
 for x in range(10):
-    y = 1
+    x = 0
+    y = 1 * x
+    z = 3
     print(y)
 
 print("Foo")
