@@ -13,6 +13,6 @@ except NameError:
 print("\n\nSum: {}".format(num1 + num2))
 print("Difference: {}".format(num1 - num2))
 print("Product: {}".format(num1 * num2))
-print("Division: {:.2f}".format(num1/float(num2)))
+print("Division: {:.2f}".format(num1 / float(num2)))
 
 print()
