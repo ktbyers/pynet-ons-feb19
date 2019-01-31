@@ -18,7 +18,7 @@ ip_binary.append(bin(int(my_ip_list[2])))
 ip_binary.append(bin(int(my_ip_list[3])))
 
 print()
-print("{:<12} {:<12} {:<12} {:<12}".format('octet1', 'octet2', 'octet3', 'octet4'))
+print("{:<12} {:<12} {:<12} {:<12}".format("octet1", "octet2", "octet3", "octet4"))
 print("{:<12} {:<12} {:<12} {:<12}".format(*my_ip_list))
 print("{:<12} {:<12} {:<12} {:<12}".format(*ip_binary))
 print()
