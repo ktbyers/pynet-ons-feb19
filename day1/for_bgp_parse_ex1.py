@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
-output_file = 'bgp_output.txt'
+output_file = "bgp_output.txt"
 
 with open("show_ip_bgp.txt") as f:
     show_bgp = f.read()
 
-header_lines, bgp_table = show_bgp.split('Weight Path')
+header_lines, bgp_table = show_bgp.split("Weight Path")
 bgp_table = bgp_table.strip("\n")
 
 with open(output_file, "w") as f:
