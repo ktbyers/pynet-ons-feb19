@@ -7,7 +7,7 @@ try:
 except NameError:
     # PY3
     ip_addr = input("Please enter IP address: ")
-    
+
 ip_addr = ip_addr.split(".")
 
 print()
