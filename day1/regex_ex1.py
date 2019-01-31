@@ -8,7 +8,7 @@ with open("show_int_fa4.txt") as f:
 
 patterns = {
     "Input": r"(\d+) packets input, (\d+) bytes",
-    "Output": r"(\d+) packets output, (\d+) bytes"
+    "Output": r"(\d+) packets output, (\d+) bytes",
 }
 
 for label, pattern in patterns.items():
