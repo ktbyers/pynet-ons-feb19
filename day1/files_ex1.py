@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
-#### READ ####
+# READ ####
 f = open("my_file.txt")
 print("\nLoop directly over file")
 print("-" * 60)
@@ -34,13 +34,13 @@ with open("my_file.txt") as f:
     print("-" * 60)
 
 
-#### WRITE ####
+# WRITE ####
 print("\nWriting file.")
 f = open("new_file.txt", "w")
 f.write("whatever2\n")
 f.close()
 
-#### APPEND ####
+# APPEND ####
 print("\nAppending file.")
 with open("new_file.txt", "a") as f:
     f.write("something else\n")

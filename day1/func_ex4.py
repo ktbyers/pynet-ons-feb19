@@ -32,7 +32,10 @@ def find_model(show_ver):
 
 
 def find_os_version(show_ver):
-    """Cisco IOS Software, C880 Software (C880DATA-UNIVERSALK9-M), Version 15.4(2)T1, RELEASE SOFTWARE (fc3)"""
+    """
+    Cisco IOS Software, C880 Software (C880DATA-UNIVERSALK9-M), Version 15.4(2)T1, RELEASE
+    SOFTWARE (fc3)
+    """
     for line in show_ver.splitlines():
         if "Cisco IOS Software" in line:
             os_version = line.split(",")[2]
