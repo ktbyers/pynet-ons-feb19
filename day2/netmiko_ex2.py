@@ -4,20 +4,19 @@ from __future__ import print_function
 from getpass import getpass
 from netmiko import ConnectHandler
 
+
 def main():
     """Exercises using Netmiko"""
     passwd = getpass("Enter password: ")
 
     srx1 = {
-        'device_type': 'juniper_junos',
-        'host':   'srx1.twb-tech.com',
-        'username': 'pyclass',
-        'password': passwd,
+        "device_type": "juniper_junos",
+        "host": "srx1.twb-tech.com",
+        "username": "pyclass",
+        "password": passwd,
     }
 
-    cfg_commands = [
-        'set system syslog file messages any error',
-    ]
+    cfg_commands = ["set system syslog file messages any error"]
 
     for a_device in [srx1]:
         net_connect = ConnectHandler(**a_device)
