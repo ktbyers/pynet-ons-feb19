@@ -1,0 +1,16 @@
+Last login: Sat Feb  2 14:45:16 2019 from 54.183.235.179
+arista1#
+arista1#terminal length 0
+Pagination disabled.
+arista1#terminal width 511
+Width set to 511 columns.
+arista1#
+arista1#show ip arp
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1           N/A  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.20          N/A  c89c.1dea.0eb6  Vlan1, not learned
+10.220.88.21          N/A  1c6a.7aaf.576c  Vlan1, not learned
+10.220.88.37          N/A  0001.00ff.0001  Vlan1, not learned
+10.220.88.38          N/A  0002.00ff.0001  Vlan1, not learned
+10.220.88.42          N/A  ec38.739e.2f08  Vlan1, Ethernet1
+arista1#

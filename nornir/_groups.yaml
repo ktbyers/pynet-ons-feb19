@@ -1,0 +1,21 @@
+---
+cisco:
+  platform: ios
+
+arista:
+  platform: eos
+  connection_options:
+    netmiko:
+      extras:
+        # session_log: "arista.txt"
+        global_delay_factor: 5
+
+juniper:
+  platform: junos
+  data:
+    arp_cmd: "show arp"
+
+nxos:
+  platform: nxos
+  data:
+    arp_cmd: "show ip arp vrf management"

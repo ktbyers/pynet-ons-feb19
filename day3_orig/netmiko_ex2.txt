@@ -1,0 +1,9 @@
+
+Netmiko Ex2
+-----------
+
+a. Connect to the Juniper SRX
+b. Configure + commit the following change to the SRX.
+
+    set system syslog file messages any error
+

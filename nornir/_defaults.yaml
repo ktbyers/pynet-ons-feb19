@@ -1,0 +1,8 @@
+# Stub out connection_options
+connection_options:
+  netmiko:
+    extras:
+      secret: bogus
+  napalm:
+    extras:
+      optional_args: {}
