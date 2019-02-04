@@ -9,23 +9,24 @@ def main():
     """Exercises using Netmiko"""
     passwd = getpass("Enter password: ")
 
-    srx1 = {
-        "device_type": "juniper_junos",
-        "host": "srx1.twb-tech.com",
+    nxos1 = {
+        "device_type": "cisco_nxos",
+        "host": "nxos1.lasthop.io",
         "username": "pyclass",
         "password": passwd,
     }
 
-    cfg_commands = ["set system syslog file messages any error"]
+    cfg_commands = ["logging history size 200"]
 
-    for a_device in [srx1]:
+    for a_device in [nxos1]:
         net_connect = ConnectHandler(**a_device)
         print("Current Prompt: " + net_connect.find_prompt())
 
-        print("\nConfiguring Syslog + commit")
+        print("\nConfiguring logging")
         print("#" * 80)
         output = net_connect.send_config_set(cfg_commands)
-        output += net_connect.commit()
+        print("\nSaving config to startup")
+        net_connect.save_config()
         print(output)
         print("#" * 80)
         print()

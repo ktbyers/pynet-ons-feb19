@@ -2,8 +2,8 @@
 Netmiko Ex2
 -----------
 
-a. Connect to the Juniper SRX
-b. Configure + commit the following change to the SRX.
+a. Connect to one of the Cisco NX-OS devices
+b. Configure and save (write mem) the following change.
 
-    set system syslog file messages any error
+    logging history size 200
 
