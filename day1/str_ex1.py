@@ -1,20 +1,18 @@
-#!/usr/bin/env python
-from __future__ import print_function
 
-name1 = "Kirk Byers"
-name2 = "George Washington"
-name3 = "Thomas Jefferson"
+#String Ex1
+#----------
 
-try:
-    # PY2
-    name4 = raw_input("Enter fourth name: ")
-except NameError:
-    # PY3
-    name4 = input("Enter fourth name: ")
+### Work in your pynet_test repository ###
 
-print()
-print("{:>30}".format(name1))
-print("{:>30}".format(name2))
-print("{:>30}".format(name3))
-print("{:>30}".format(name4))
-print()
+#a. Create a python script with three strings representing three names
+#b. Print these three names out in a column 30 wide, right aligned
+#c. Execute the script verify the output
+#d. Add a prompt for a fourth name, print this out as well
+#e. check your code into GitHub
+
+
+name1 = "Rudy"
+name2 = "Tom"
+name3 = "Greg"
+print("{:>30} {:>30} {:>30}".format(name1, name2, name3))
+ 
