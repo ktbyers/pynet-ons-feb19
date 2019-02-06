@@ -1,0 +1,9 @@
+
+Using the Python requests library. Connect to the following URL 
+(https://netbox.lasthop.io/api) and retrieve the information there using an
+HTTP GET.
+
+You will probably need the following HTTP Headers:
+
+http_headers = {"accept": "application/json; version=2.4;"}
+
