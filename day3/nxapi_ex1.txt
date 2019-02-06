@@ -1,0 +1,8 @@
+
+Connect to nxos2 using NX-API and JSON-RPC
+
+Retrieve 'show version' from this device.
+
+From this 'show version' output extract the device's serial number.
+
+Optional - solve this problem again, but using NX-API with XML instead.
