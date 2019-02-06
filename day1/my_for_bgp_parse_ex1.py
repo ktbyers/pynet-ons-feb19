@@ -34,7 +34,7 @@ print(banner)
 for x in network[1:]:
     line = x.split()
     prefix = line[0]
-    as_path = line[4:]
+    as_path = line[4:-1]
     as_path = ' '.join(as_path)
     print("{:20} {:40}".format(prefix, as_path))
 print(banner)
