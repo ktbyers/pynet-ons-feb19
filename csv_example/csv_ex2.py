@@ -20,6 +20,10 @@ def establish_netmiko_conn(device_name, netmiko_dict):
         print("-" * 40)
         print("Establish SSH Conn: {}".format(device_name))
         netmiko_dict["password"] = PASSWORD
+        if netmiko_dict.get("global_delay_factor"):
+            netmiko_dict["global_delay_factor"] = int(
+                netmiko_dict["global_delay_factor"]
+            )
         net_conn = ConnectHandler(**netmiko_dict)
         print(net_conn.find_prompt())
         print("-" * 40)
