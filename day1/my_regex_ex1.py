@@ -3,14 +3,8 @@ import re
 with open("show_int_fa4.txt") as f:
     show_int = f.read()
 
-print(show_int)
-
 input = re.search(r"(\d+) packets input, (\d+) bytes", show_int)
 output = re.search(r"(\d+) packets output, (\d+) bytes", show_int)
-
-print(input)
-
-print(input.group(0))
 
 packets_input = input.group(1)
 bytes_input = input.group(2)
@@ -18,8 +12,8 @@ bytes_input = input.group(2)
 packets_output = output.group(1)
 bytes_output = output.group(2)
 
-print(packets_input)
-print(bytes_input)
+#print(packets_input)
+#print(bytes_input)
 
 print("Packet input: {} Bytes input: {}".format(packets_input, bytes_input))
 
