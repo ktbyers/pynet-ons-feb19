@@ -2,7 +2,7 @@
 from __future__ import print_function
 from getpass import getpass
 from pprint import pprint as pp
-from napalm_base import get_network_driver
+from napalm import get_network_driver
 
 host = 'juniper1.twb-tech.com'
 username = 'pyclass'

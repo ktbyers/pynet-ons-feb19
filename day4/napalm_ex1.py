@@ -2,8 +2,14 @@
 from __future__ import print_function
 from pprint import pprint as pp
 
-from napalm_base import get_network_driver
+from napalm import get_network_driver
 from my_devices_na import device_list
+
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+ 
 
 def main():
     for a_device in device_list:

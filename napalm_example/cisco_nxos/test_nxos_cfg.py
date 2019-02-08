@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from getpass import getpass
 from pprint import pprint as pp
-from napalm_base import get_network_driver
+from napalm import get_network_driver
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning

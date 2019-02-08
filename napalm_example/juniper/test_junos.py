@@ -2,7 +2,7 @@
 from getpass import getpass
 from pprint import pprint as pp
 
-from napalm_base import get_network_driver
+from napalm import get_network_driver
 
 host = '184.105.247.76'
 username = 'pyclass'
