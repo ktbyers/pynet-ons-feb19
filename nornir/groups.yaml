@@ -7,8 +7,8 @@ arista:
   connection_options:
     netmiko:
       extras:
-        # session_log: "arista.txt"
         global_delay_factor: 5
+        # session_log: "arista.txt"
 
 juniper:
   platform: junos

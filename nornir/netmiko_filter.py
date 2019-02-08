@@ -1,7 +1,7 @@
 from nornir import InitNornir
 from nornir.core.filter import F
 from nornir.plugins.tasks.networking import netmiko_send_command
-from nornir.plugins.functions.text import print_result
+# from nornir.plugins.functions.text import print_result
 
 from nornir_utilities import nornir_set_creds, std_print
 
@@ -9,8 +9,7 @@ from nornir_utilities import nornir_set_creds, std_print
 def main():
 
     # Initialize Nornir object using hosts.yaml/groups.yaml/defaults.yaml
-    # norn = InitNornir(config_file="./nornir.yaml")
-    norn = InitNornir(config_file="/home/kbyers/nornir_inventory/config.yaml")
+    norn = InitNornir(config_file="./nornir.yaml")
     nornir_set_creds(norn)
 
     # f = F(groups__contains="juniper")
@@ -21,6 +20,7 @@ def main():
     # my_devices = norn
     f = F(groups__contains="cisco")
     my_devices = norn.filter(f)
+
     result = my_devices.run(
         netmiko_send_command,
         num_workers=20,

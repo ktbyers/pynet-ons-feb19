@@ -13,7 +13,7 @@ def test_task(task):
 def main():
 
     # Initialize Nornir object using hosts.yaml/groups.yaml/defaults.yaml
-    norn = InitNornir(config_file="/home/kbyers/nornir_inventory/config.yaml")
+    norn = InitNornir(config_file="nornir.yaml")
     nornir_set_creds(norn)
     result = norn.run(test_task, num_workers=20)
     std_print(result)

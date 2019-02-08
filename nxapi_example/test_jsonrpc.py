@@ -16,11 +16,11 @@ device = Device(
     verify=False,
 )
 
-output = device.show("show hostname")
-print(output)
+# output = device.show("show hostname")
+# print(output)
 
-# output = device.show("show version")
-# pprint(output)
+output = device.show("show version")
+pprint(output)
 
 # output = device.show("show lldp neighbors")
 # pprint(output)
