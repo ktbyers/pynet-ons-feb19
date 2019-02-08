@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import print_function, unicode_literals
 from getpass import getpass
+from pprint import pprint
 from netmiko import ConnectHandler
 
 if __name__ == "__main__":
@@ -11,10 +12,9 @@ if __name__ == "__main__":
         "host": "cisco3.lasthop.io",
         "username": "pyclass",
         "password": password,
-        "session_log": "my_session.txt",
+        # "session_log": "my_session.txt",
     }
 
     net_connect = ConnectHandler(**cisco3)
-    print(net_connect.find_prompt())
-    print(net_connect.send_command("show ip int brief"))
+    pprint(net_connect.send_command("show ip int brief", use_textfsm=True))
     net_connect.disconnect()

@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from __future__ import print_function
-from pprint import pprint as pp
 
 from napalm import get_network_driver
 from my_devices_na import cisco4
