@@ -2,8 +2,8 @@
 Threads Ex1
 ------------
 
-Use threads to execute 'show arp' on the two Cisco routers, four Arista switches, and
-Juniper SRX.
+Use threads to execute 'show ip arp' on the two Cisco routers, and four Arista
+switches. 
 
 Store your device information in an external Python module and import it.
 

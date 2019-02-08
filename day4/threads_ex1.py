@@ -21,7 +21,7 @@ def remote_cmd(a_device, cmd=""):
 
 def main():
     for a_device in devices:
-        my_thread = threading.Thread(target=remote_cmd, args=(a_device, "show arp"))
+        my_thread = threading.Thread(target=remote_cmd, args=(a_device, "show ip arp"))
         my_thread.start()
 
     main_thread = threading.currentThread()
