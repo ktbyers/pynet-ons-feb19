@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from getpass import getpass
-from pprint import pprint as pp
 from napalm import get_network_driver
 
 import requests
