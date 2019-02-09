@@ -12,11 +12,11 @@ from my_devices import device_list as devices
 
 def show_version(a_device):
     """Execute show version command using Netmiko."""
+    print()
+    print("#" * 80)
     remote_conn = ConnectHandler(**a_device)
     output = remote_conn.send_command_expect("show version")
     remote_conn.disconnect()
-    print()
-    print("#" * 80)
     print(output)
     print("#" * 80)
     print()
