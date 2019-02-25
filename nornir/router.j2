@@ -1,3 +1,10 @@
 ***********
-{{ host.groups[0].group }}
+{{ group.data }}
+
+{% for k, v in host.items() %}
+{{ k }}
+{{ v }}
+{% endfor %}
+
+{{ host.get("arp_cmd") }}
 ***********
