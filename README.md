@@ -1,2 +1,2 @@
-# pynet-ons-feb19
-Onsite February 4, 2019
+# pynet-ons-template
+Python Course Onsite - Course Template
